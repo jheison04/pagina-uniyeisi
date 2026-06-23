@@ -1,7 +1,5 @@
 
-/* ================================================================
-   1. RESET Y CONFIGURACIÓN BASE
-   ================================================================ */
+/*1. RESET Y CONFIGURACIÓN BASE*/
 * {
     margin: 0;
     padding: 0;
@@ -29,18 +27,14 @@ img {
     height: auto;
 }
 
-/* ================================================================
-   2. CONTENEDOR PRINCIPAL
-   ================================================================ */
+/* 2. CONTENEDOR PRINCIPAL*/
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* ================================================================
-   3. HEADER / BARRA DE NAVEGACIÓN
-   ================================================================ */
+/*3. HEADER / BARRA DE NAVEGACIÓN*/
 .header {
     background-color: #1B4332;
     padding: 16px 0;
@@ -122,9 +116,7 @@ img {
     background-color: #B30321;
 }
 
-/* ================================================================
-   4. BANNER PRINCIPAL
-   ================================================================ */
+/* 4. BANNER PRINCIPAL*/
 .banner-principal {
     padding: 80px 0;
     background: linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 100%);
@@ -194,9 +186,7 @@ img {
     text-align: center;
 }
 
-/* ================================================================
-   5. SECCIÓN COLEGIOS / INSTITUCIONES
-   ================================================================ */
+/*5. SECCIÓN COLEGIOS / INSTITUCIONES*/
 .seccion-colegios {
     padding: 80px 0;
     background-color: #FFFFFF;
@@ -218,9 +208,10 @@ img {
 }
 
 .grilla-colegios {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .tarjeta-colegio {
@@ -285,9 +276,7 @@ img {
     background-color: #0F2B20;
 }
 
-/* ================================================================
-   6. SECCIÓN CATÁLOGO
-   ================================================================ */
+/*6. SECCIÓN CATÁLOGO */
 .seccion-catalogo {
     padding: 80px 0;
     background-color: #F8F9FA;
@@ -392,9 +381,7 @@ img {
     color: #FFFFFF;
 }
 
-/* ================================================================
-   7. SECCIÓN SOBRE NOSOTROS
-   ================================================================ */
+/*7. SECCIÓN SOBRE NOSOTROS*/
 .seccion-sobre-nosotros {
     padding: 80px 0;
     background-color: #FFFFFF;
@@ -428,9 +415,7 @@ img {
     text-align: center;
 }
 
-/* ================================================================
-   8. SECCIÓN UBICACIÓN
-   ================================================================ */
+/* 8. SECCIÓN UBICACIÓN */
 .seccion-ubicacion {
     padding: 80px 0;
     background-color: #F8F9FA;
@@ -521,9 +506,7 @@ img {
     margin-bottom: 12px;
 }
 
-/* ================================================================
-   9. FOOTER / PIE DE PÁGINA
-   ================================================================ */
+/*9. FOOTER / PIE DE PÁGINA*/
 .footer {
     background-color: #1B4332;
     color: #FFFFFF;
@@ -594,9 +577,7 @@ img {
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* ================================================================
-   10. RESPONSIVE / ADAPTACIÓN A MÓVILES
-   ================================================================ */
+/*10. RESPONSIVE / ADAPTACIÓN A MÓVILES*/
 
 /* Tablets */
 @media (max-width: 1024px) {
@@ -687,9 +668,7 @@ img {
     }
 }
 
-/* ================================================================
-   11. IMÁGENES DE PRUEBA (TEMPORALES)
-   ================================================================ */
+/*11. IMÁGENES DE PRUEBA (TEMPORALES)*/
 
 /* Banner principal */
 .banner-imagen img {
@@ -770,3 +749,4 @@ img {
     min-height: 250px;
     min-width: 350px;
 }
+
