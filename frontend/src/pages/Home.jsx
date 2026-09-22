@@ -1,18 +1,20 @@
 
-import Hero from "../Components/Hero";
-import Colegios from "../Components/Colegios";
-import Pruductos from "../Components/Productos";
-import PorqueElegirnos from "../Components/PorqueElegirnos";
-import Contacto from "../Components/Contacto";
-import QuienesSomos from "../Components/QuienesSomos";
-import Footer from "../Components/Footer";
+import Hero from "../components/Hero";
+import Colegios from "../components/Colegios";
+import Productos from "../components/Productos";
+import PorqueElegirnos from "../components/PorqueElegirnos";
+import Contacto from "../components/Contacto";
+import QuienesSomos from "../components/QuienesSomos";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 function Home() {
   return (
     <div>
+      <Navbar />
       <Hero />
       <Colegios />
-      <Pruductos />
+      <Productos />
       <PorqueElegirnos />
       <Contacto />
       <QuienesSomos />

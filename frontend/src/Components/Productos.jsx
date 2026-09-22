@@ -1,19 +1,49 @@
+import { useEffect, useState } from "react";
+
 function Productos() {
-    return (
-        <section>
-        <h2>Productos Destacados</h2>
 
-        <div>
-          <h3>Camisa de Diario</h3>
-          <p>I.E. Juan de Dios Carvajal</p>
-          <p>$85.000</p>
-        </div>
+  const [productos, setProductos] = useState([]);
 
-        <div>
-          <h3>Sudadera</h3>
-          <p>I.E. Normal Superior de Medellín</p>
-          <p>$120.000</p>
-        </div>
-      </section>
-    );
+  useEffect(() => {
+
+    fetch("http://localhost:8080/api/productos")
+      .then((respuesta) => respuesta.json())
+      .then((datos) => setProductos(datos))
+      .catch((error) => console.error(error));
+
+  }, []);
+
+  return (
+    <section className="productos">
+
+      <h2>Productos Destacados</h2>
+
+      <div className="productos-grid">
+
+        {productos.map((producto) => (
+
+          <div className="card-producto" key={producto.id}>
+
+            <h3>{producto.nombre}</h3>
+
+            <p>{producto.colegio}</p>
+
+            <p>Talla: {producto.talla}</p>
+
+            <p className="precio">
+              ${producto.precio.toLocaleString("es-CO")}
+            </p>
+
+            <button>Ver producto</button>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </section>
+  );
 }
+
+export default Productos;

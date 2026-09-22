@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f7fa;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0b3d91;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* HERO */
+
+.hero {
+  background: linear-gradient(135deg, #0b3d91, #1e88e5);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 35px;
+}
+
+.hero button {
+  margin: 8px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #0b3d91;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #e3f2fd;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 18px 60px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: #0b3d91;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #0b3d91;
+}
+
+/* ===========================
+   PRODUCTOS
+=========================== */
+
+.productos {
+  text-align: center;
+}
+
+.productos-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card-producto {
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card-producto:hover {
+  transform: translateY(-8px);
+}
+
+.card-producto h3 {
+  color: #0b3d91;
+  margin-bottom: 10px;
+}
+
+.card-producto p {
+  margin: 8px 0;
+}
+
+.precio {
+  font-size: 24px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.card-producto button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #0b3d91;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.card-producto button:hover {
+  background: #1565c0;
+}
+
+.colegios-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.colegio-card {
+    width: 350px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    transition: .3s;
+}
+
+.colegio-card:hover {
+    transform: translateY(-10px);
+}
+
+.colegio-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.colegio-card h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+.colegio-card button {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #0b3d91;
+    color: white;
+    cursor: pointer;
+}
